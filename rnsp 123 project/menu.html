@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu - The Golden Spoon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ================= NAVIGATION ================= -->
+<nav class="navbar">
+    <div class="container">
+        <div class="nav-brand">
+            <h1>The Golden Spoon</h1>
+        </div>
+
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html" class="active">Menu</a></li>
+            <li>
+                <a href="cart.html">
+                    Cart <span id="cart-count" class="cart-badge">0</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- ================= PAGE HEADER ================= -->
+<section class="page-header">
+    <div class="container">
+        <h1>Our Menu</h1>
+        <p>Discover our exquisite selection of dishes</p>
+    </div>
+</section>
+
+<!-- ================= MENU SECTION ================= -->
+<section class="menu-section">
+    <div class="container">
+
+        <!-- Category Buttons -->
+        <div class="category-filter">
+            <button class="category-btn active" data-category="all">All Items</button>
+            <button class="category-btn" data-category="starters">Starters</button>
+            <button class="category-btn" data-category="main-course">Main Course</button>
+            <button class="category-btn" data-category="desserts">Desserts</button>
+            <button class="category-btn" data-category="cold-drinks">Cold Drinks</button>
+        </div>
+
+        <!-- Menu Items Grid -->
+        <div id="menu-items" class="menu-grid">
+            <!-- Items will load here from JS -->
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= TOAST MESSAGE ================= -->
+<div id="toast" class="toast">
+    Item added to cart!
+</div>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2024 The Golden Spoon. All rights reserved.</p>
+        <p>📞 +1 (555) 123-4567 | 📧 info@goldenspoon.com</p>
+    </div>
+</footer>
+
+<!-- ================= SCRIPTS ================= -->
+<script src="js/menuData.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/menu.js"></script>
+
+</body>
+</html>
